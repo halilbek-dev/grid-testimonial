@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --Purple-50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 80%);
+    --Purple-500: hsl(263, 55%, 52%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Purple-50);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 1040px;
+    height: 580px;
+    justify-content: space-between;
+}
+
+.section-1 {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1>.box-1 {
+    display: grid;
+    grid-template-columns: 550px 200px;
+    grid-template-rows: 290px;
+}
+
+.section-1>.box-2 {
+    display: grid;
+    grid-template-columns: 220px 530px;
+    grid-template-rows: 290px;
+    margin-top: 7px;
+}
+
+.section-2 {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 290px;
+}
+
+.section-2>.article-1 {
+    height: 575px;
+    margin: 8px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-right: 4px;
+}
+
+h2 {
+    font-size: 16px;
+    color: rgb(197, 196, 196);
+    margin: 6px;
+}
+
+.section-1>.box-1>.article-1 {
+    background-color: var(--Purple-500);
+    border: 2px solid rgb(95, 23, 218);
+    border-radius: 14px;
+    margin: 8px;
+    padding: 7px;
+}
+
+.username>p {
+    font-size: 14px;
+    font-weight: 450;
+    color: white;
+}
+
+.section-1>.box-1>.article-2 {
+    background-color: var(--Grey-400);
+    border: none;
+    border-radius: 14px;
+    margin: 8px;
+    padding: 7px;
+}
+
+.section-1>.box-2>.article-1 {
+    background-color: var(--White);
+    border: none;
+    border-radius: 14px;
+    margin: 8px;
+    padding: 15px;
+}
+
+.section-1>.box-2>.article-2 {
+    background-color: rgb(69, 69, 83);
+    border: none;
+    border-radius: 14px;
+    margin: 8px;
+    padding: 15px;
+}
+
+.section-2>.article-1 {
+    background-color: var(--White);
+    border: none;
+    border-radius: 14px;
+    margin: 8px;
+    padding: 15px;
+}
+
+.article-1>p,
+.article-2>p {
+    font-size: 14px;
+    color: black;
+    line-height: normal;
+    font-weight: 450;
+    margin: 10px 7px;
+}
+
+.section-1>.box-2>.article-1>.username>p,
+h1,
+span,
+.section-1>.box-1>.article-2>.username>p,
+h1,
+span,
+.section-1>.box-2>.article-1>p,
+h1,
+.section-1>.box-1>.article-2>p,
+h1 {
+    color: black;
+}
